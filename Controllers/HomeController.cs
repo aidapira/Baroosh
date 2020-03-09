@@ -8,10 +8,6 @@ using Baroosh.Models;
 using MailKit.Net.Smtp;
 using MimeKit;
 using MailKit.Security;
-// using MailKit.Net.Smtp;
-// using MimeKit;
-// using MailKit.Security;
-// using static MailKit.Net.Smtp.SmtpClient;
 
 namespace Baroosh.Controllers
 {
@@ -33,7 +29,7 @@ namespace Baroosh.Controllers
             MimeMessage message = new MimeMessage();
             MailboxAddress from = new MailboxAddress(name, email);
             message.From.Add(from);
-            MailboxAddress to = new MailboxAddress("Shop","aidapa1995@gmail.com");
+            MailboxAddress to = new MailboxAddress("Shop","barooshfactory@gmail.com");
             message.To.Add(to);
             message.Subject = "Email from website";
             BodyBuilder bod = new BodyBuilder();
@@ -42,7 +38,7 @@ namespace Baroosh.Controllers
             message.Body = bod.ToMessageBody();
             SmtpClient client = new SmtpClient();
             client.Connect("smtp.gmail.com",587,SecureSocketOptions.StartTls);
-            client.Authenticate("aidapa1995@gmail.com","");
+            client.Authenticate("barooshfactory@gmail.com","alireza92");
             client.Send(message);
             client.Disconnect(true);
             client.Dispose();

@@ -5,8 +5,11 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="بتن گازی سبک، بهترین، سبک ترین، و عایق ترین محصول ساختمانی است.">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <title>Baroosh</title>
+  <title>Baroosh Aerated Autoclaved Concrete (AAC)</title>
+
+  
 
   <!-- Bootstrap -->
   <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -28,6 +31,75 @@
 
 
 <body>
+
+  <div vocab="https://schema.org/" typeof="Product">
+     <span property="brand">باروش</span> <span property="name">بتن باروش</span>
+     <!--<img property="image" src="anvil_executive.jpg" alt="Executive Anvil logo" />-->
+
+     <span property="aggregateRating"
+           typeof="AggregateRating">
+      Average rating: <span property="ratingValue">4.4</span>, based on
+      <span property="ratingCount">89</span> reviews
+     </span>
+
+     <!--<span property="offers" typeof="AggregateOffer">
+      from $<span property="lowPrice">119.99</span> to
+      $<span property="highPrice">199.99</span>
+      <meta property="priceCurrency" content="USD" />
+     </span>-->
+    </div>
+
+    <div typeof="schema:Product">
+        <div rel="schema:review">
+          <div typeof="schema:Review">
+            <div rel="schema:reviewRating">
+              <div typeof="schema:Rating">
+                <div property="schema:ratingValue" content="4"></div>
+                <div property="schema:bestRating" content="5"></div>
+              </div>
+            </div>
+            <div rel="schema:author">
+              <div typeof="schema:Person">
+                <div property="schema:name" content="Fred Benson"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--<div rel="schema:image" resource="https://example.com/photos/4x3/photo.jpg"></div>-->
+        <div property="schema:mpn" content="925872"></div>
+        <div property="schema:name" content="Executive Anvil"></div>
+        <div property="schema:description" content="بتن گازی سبک، بهترین، سبک ترین، و عایق ترین محصول ساختمانی است."></div>
+        <!--<div rel="schema:image" resource="https://example.com/photos/1x1/photo.jpg"></div>-->
+        <div rel="schema:brand">
+          <div typeof="schema:Thing">
+            <div property="schema:name" content="ACME"></div>
+          </div>
+        </div>
+        <div rel="schema:aggregateRating">
+          <div typeof="schema:AggregateRating">
+            <div property="schema:reviewCount" content="89"></div>
+            <div property="schema:ratingValue" content="4.4"></div>
+          </div>
+        </div>
+        <!--<div rel="schema:offers">
+          <div typeof="schema:Offer">
+            <div property="schema:price" content="119.99"></div>
+            <div property="schema:availability" content="https://schema.org/InStock"></div>
+            <div rel="schema:seller">
+              <div typeof="schema:Organization">
+                <div property="schema:name" content="Executive Objects"></div>
+              </div>
+            </div>
+            <div property="schema:priceCurrency" content="USD"></div>
+            <div property="schema:priceValidUntil" datatype="xsd:date" content="2019-02-05"></div>
+            <div rel="schema:url" resource="https://example.com/anvil"></div>
+            <div property="schema:itemCondition" content="https://schema.org/UsedCondition"></div>
+          </div>
+        </div>
+        <div rel="schema:image" resource="https://example.com/photos/16x9/photo.jpg"></div>
+        <div property="schema:sku" content="0446310786"></div>-->
+      </div>
+
   <header id="header">
     <nav class="navbar navbar-fixed-top" role="banner">
       <div class="container">
@@ -77,17 +149,23 @@
                 <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing</p> -->
               </div>
               <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.9s">
-                <form class="form-inline">
+                <div class="form-inline">
                   <div class="form-group">
-                    <a href="#feature"><button type="livedemo" name="Live Demo" class="btn btn-primary btn-lg" required="required">ویژگی</button></a> 
+                    <a href="#feature">
+                      <button type="livedemo" name="Live Demo" class="btn btn-primary btn-lg" required="required">ویژگی</button>
+                    </a> 
                   </div>
                   <div class="form-group">
-                    <a href="#gallery"><button type="getnow" name="Get Now" class="btn btn-primary btn-lg" required="required"> کاتالوگ</button></a>
+                    <a href="#gallery">
+                      <button type="getnow" name="Get Now" class="btn btn-primary btn-lg" required="required"> کاتالوگ</button>
+                    </a>
                   </div>
                   <div class="form-group">
-                    <a href="#contact"><button type="livedemo" name="Live Demo" class="btn btn-primary btn-lg" required="required">تماس با ما</button></a> 
+                    <a href="#contact">
+                      <button type="livedemo" name="Live Demo" class="btn btn-primary btn-lg" required="required">تماس با ما</button>
+                    </a> 
                   </div>
-                </form>
+                </div>
               </div>
             </div>
           </div>
@@ -102,7 +180,7 @@
                 <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing</p> -->
               </div>
               <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="1.6s">
-                <form class="form-inline">
+                <div class="form-inline">
                   <div class="form-group">
                     <a href="#feature"><button type="livedemo" name="Live Demo" class="btn btn-primary btn-lg" required="required">ویژگی</button></a>
                   </div>
@@ -112,7 +190,7 @@
                   <div class="form-group">
                     <a href="#contact"><button type="livedemo" name="Live Demo" class="btn btn-primary btn-lg" required="required">تماس با ما</button></a>
                   </div>
-                </form>
+                </div>
               </div>
             </div>
           </div>
@@ -126,9 +204,11 @@
                 <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing</p> -->
               </div>
               <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.9s">
-                <form class="form-inline">
+                <div class="form-inline">
                   <div class="form-group">
-                    <a href="#feature"><button type="livedemo" name="Live Demo" class="btn btn-primary btn-lg" required="required">ویژگی</button></a>
+                    <a href="#feature">
+                      <button type="livedemo" name="Live Demo" class="btn btn-primary btn-lg" required="required">ویژگی</button>
+                    </a>
                   </div>
                   <div class="form-group">
                     <a href="#gallery"><button type="getnow" name="Get Now" class="btn btn-primary btn-lg" required="required">کاتالوگ</button></a>
@@ -136,7 +216,7 @@
                   <div class="form-group">
                     <a href="#contact"><button type="livedemo" name="Live Demo" class="btn btn-primary btn-lg" required="required">تماس با ما</button></a>
                   </div>
-                </form>
+                </div>
               </div>
             </div>
           </div>
